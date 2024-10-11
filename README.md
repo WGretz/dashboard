@@ -29,6 +29,7 @@ I've had this idea for a while to create a dashboard that would help me manage m
         - [ ] Update interval
         - [ ] Reorder intervals
         - [ ] Default interval
+        - [ ] Note prompt command
         - [ ] Repeat x times
         - [ ] Name of the pattern
         - [ ] Delete pattern
@@ -66,6 +67,9 @@ I've had this idea for a while to create a dashboard that would help me manage m
 - [ ] Rennovate or dependabot
 
 - [ ] Write a blog post about the process
+
+## Things to research
+
 
 
 
