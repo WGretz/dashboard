@@ -3,14 +3,15 @@
 Table of Contents Here
 
 ## What is this project?
+
 I've had this idea for a while to create a dashboard that would help me manage my day. One card I want for my dashboard is a Pomodoro timer. I've been using the Pomofocus website for a while now, but I wanted to have my own version that works in a slightly different way.  I want to see how far I can get and how long it takes me to build this. I'm also going to use this to learn more about Rails 8, Hotwire, and Stimulus, as well as make a PWA.
 
 ## What I want to get done:
-- [ ] Setup RSpec
+
+- [x] Setup RSpec
 - [ ] Setup ESLint
 - [ ] Setup Husky
 - [ ] Setup Rubocop
-
 - [ ] Pomodoro timer
     - [ ] Timer
     - [ ] Pause
@@ -70,6 +71,9 @@ I've had this idea for a while to create a dashboard that would help me manage m
 
 ## Things to research
 
+## Design Notes:
+
+### Task List
 
 
 
