@@ -55,13 +55,12 @@ group :development, :test do
   gem "shoulda-matchers"
   gem "rails-controller-testing"
   gem "pry-rails"
-  gem "execjs" # for pre-commit
 end
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
-  gem "pre-commit", require: false
+  gem "lefthook"
 end
 
 group :test do
