@@ -187,6 +187,9 @@ GEM
     parser (3.3.5.0)
       ast (~> 2.4.1)
       racc
+    pluginator (1.5.0)
+    pre-commit (0.40.0)
+      pluginator (~> 1.5)
     propshaft (1.1.0)
       actionpack (>= 7.0.0)
       activesupport (>= 7.0.0)
@@ -378,6 +381,7 @@ DEPENDENCIES
   importmap-rails
   jbuilder
   kamal (>= 2.0.0.rc2)
+  pre-commit
   propshaft
   pry-rails
   puma (>= 5.0)
