@@ -13,16 +13,16 @@ require 'rails_helper'
 # sticking to rails and rspec-rails APIs to keep things simple and stable.
 
 RSpec.describe "/todos", type: :request do
-  
+
   # This should return the minimal set of attributes required to create a valid
   # Todo. As you add validations to Todo, be sure to
   # adjust the attributes here as well.
   let(:valid_attributes) {
-    skip("Add a hash of attributes valid for your model")
+    { item: "Buy milk", completed_at: nil, priority: 1, due_at: nil }
   }
 
   let(:invalid_attributes) {
-    skip("Add a hash of attributes invalid for your model")
+    { item: nil, completed_at: nil, priority: 1, due_at: nil }
   }
 
   describe "GET /index" do
@@ -87,14 +87,15 @@ RSpec.describe "/todos", type: :request do
   describe "PATCH /update" do
     context "with valid parameters" do
       let(:new_attributes) {
-        skip("Add a hash of attributes valid for your model")
+        { item: "Buy Mt Dew", completed_at: nil, priority: 10, due_at: nil }
       }
 
       it "updates the requested todo" do
         todo = Todo.create! valid_attributes
         patch todo_url(todo), params: { todo: new_attributes }
         todo.reload
-        skip("Add assertions for updated state")
+        expect(todo.item).to eq("Buy Mt Dew")
+        expect(todo.priority).to eq(10)
       end
 
       it "redirects to the todo" do

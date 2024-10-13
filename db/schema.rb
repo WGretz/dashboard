@@ -14,7 +14,7 @@ ActiveRecord::Schema[8.0].define(version: 2024_10_12_201628) do
   create_table "todos", force: :cascade do |t|
     t.string "item"
     t.datetime "completed_at"
-    t.string "priority"
+    t.integer "priority"
     t.datetime "due_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
